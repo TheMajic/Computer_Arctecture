@@ -1,0 +1,280 @@
+|Bbqm_pro
+clk => clk.IN1
+input1 => input1.IN1
+input2 => input2.IN1
+reset => reset.IN2
+tcount[0] => tcount[0].IN1
+tcount[1] => tcount[1].IN1
+empty << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+full << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+leds_pcount[0] << decoder_7seg:pcount_7seg.port10
+leds_pcount[1] << decoder_7seg:pcount_7seg.port9
+leds_pcount[2] << decoder_7seg:pcount_7seg.port8
+leds_pcount[3] << decoder_7seg:pcount_7seg.port7
+leds_pcount[4] << decoder_7seg:pcount_7seg.port6
+leds_pcount[5] << decoder_7seg:pcount_7seg.port5
+leds_pcount[6] << decoder_7seg:pcount_7seg.port4
+leds_wtime1[0] << decoder_7seg:wtime1_7seg.port10
+leds_wtime1[1] << decoder_7seg:wtime1_7seg.port9
+leds_wtime1[2] << decoder_7seg:wtime1_7seg.port8
+leds_wtime1[3] << decoder_7seg:wtime1_7seg.port7
+leds_wtime1[4] << decoder_7seg:wtime1_7seg.port6
+leds_wtime1[5] << decoder_7seg:wtime1_7seg.port5
+leds_wtime1[6] << decoder_7seg:wtime1_7seg.port4
+leds_wtime2[0] << decoder_7seg:wtime2_7seg.port10
+leds_wtime2[1] << decoder_7seg:wtime2_7seg.port9
+leds_wtime2[2] << decoder_7seg:wtime2_7seg.port8
+leds_wtime2[3] << decoder_7seg:wtime2_7seg.port7
+leds_wtime2[4] << decoder_7seg:wtime2_7seg.port6
+leds_wtime2[5] << decoder_7seg:wtime2_7seg.port5
+leds_wtime2[6] << decoder_7seg:wtime2_7seg.port4
+
+
+|Bbqm_pro|clock_divider:cl
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => CLK1Hz~reg0.CLK
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+reset => count[15].ACLR
+reset => count[16].ACLR
+reset => count[17].ACLR
+reset => count[18].ACLR
+reset => count[19].ACLR
+reset => count[20].ACLR
+reset => count[21].ACLR
+reset => count[22].ACLR
+reset => count[23].ACLR
+reset => count[24].ACLR
+reset => CLK1Hz~reg0.ACLR
+CLK1Hz <= CLK1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|D_flip_flop:inpt1
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|D_flip_flop:inpt2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|BBQM_counter:count
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+input1 => count.OUTPUTSELECT
+input1 => count.OUTPUTSELECT
+input1 => count.OUTPUTSELECT
+input1 => count.OUTPUTSELECT
+input2 => count.OUTPUTSELECT
+input2 => count.OUTPUTSELECT
+input2 => count.OUTPUTSELECT
+input2 => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|Wtime_bbqm:rom
+pcount[0] => Mux6.IN19
+pcount[0] => Mux5.IN19
+pcount[0] => Mux4.IN19
+pcount[0] => Mux3.IN19
+pcount[0] => Mux2.IN19
+pcount[0] => Mux1.IN19
+pcount[0] => Mux0.IN19
+pcount[0] => Mux7.IN19
+pcount[1] => Mux6.IN18
+pcount[1] => Mux5.IN18
+pcount[1] => Mux4.IN18
+pcount[1] => Mux3.IN18
+pcount[1] => Mux2.IN18
+pcount[1] => Mux1.IN18
+pcount[1] => Mux0.IN18
+pcount[1] => Mux7.IN18
+pcount[2] => Mux6.IN17
+pcount[2] => Mux5.IN17
+pcount[2] => Mux4.IN17
+pcount[2] => Mux3.IN17
+pcount[2] => Mux2.IN17
+pcount[2] => Mux1.IN17
+pcount[2] => Mux0.IN17
+pcount[2] => Mux7.IN17
+pcount[3] => Mux6.IN16
+pcount[3] => Mux5.IN16
+pcount[3] => Mux4.IN16
+pcount[3] => Mux3.IN16
+pcount[3] => Mux2.IN16
+pcount[3] => Mux1.IN16
+pcount[3] => Mux0.IN16
+pcount[3] => Mux7.IN16
+tcount[0] => Equal0.IN0
+tcount[0] => Equal1.IN1
+tcount[0] => Equal2.IN1
+tcount[1] => Equal0.IN1
+tcount[1] => Equal1.IN0
+tcount[1] => Equal2.IN0
+wtime1[0] <= wtime1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime1[1] <= wtime1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime1[2] <= wtime1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime1[3] <= wtime1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime2[0] <= wtime2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime2[1] <= wtime2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime2[2] <= wtime2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+wtime2[3] <= <GND>
+
+
+|Bbqm_pro|decoder_7seg:pcount_7seg
+A => led_a.IN0
+A => led_d.IN1
+A => led_f.IN1
+A => led_g.IN1
+B => led_a.IN0
+B => led_c.IN0
+B => led_d.IN0
+B => led_f.IN0
+B => led_a.IN0
+B => led_b.IN1
+B => led_d.IN0
+C => led_a.IN1
+C => led_b.IN0
+C => led_d.IN0
+C => led_d.IN1
+C => led_b.IN0
+C => led_c.IN1
+C => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_c.IN1
+D => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_d.IN1
+D => led_f.IN1
+led_a <= led_a.DB_MAX_OUTPUT_PORT_TYPE
+led_b <= led_b.DB_MAX_OUTPUT_PORT_TYPE
+led_c <= led_c.DB_MAX_OUTPUT_PORT_TYPE
+led_d <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_e <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_f <= led_f.DB_MAX_OUTPUT_PORT_TYPE
+led_g <= led_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|decoder_7seg:wtime1_7seg
+A => led_a.IN0
+A => led_d.IN1
+A => led_f.IN1
+A => led_g.IN1
+B => led_a.IN0
+B => led_c.IN0
+B => led_d.IN0
+B => led_f.IN0
+B => led_a.IN0
+B => led_b.IN1
+B => led_d.IN0
+C => led_a.IN1
+C => led_b.IN0
+C => led_d.IN0
+C => led_d.IN1
+C => led_b.IN0
+C => led_c.IN1
+C => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_c.IN1
+D => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_d.IN1
+D => led_f.IN1
+led_a <= led_a.DB_MAX_OUTPUT_PORT_TYPE
+led_b <= led_b.DB_MAX_OUTPUT_PORT_TYPE
+led_c <= led_c.DB_MAX_OUTPUT_PORT_TYPE
+led_d <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_e <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_f <= led_f.DB_MAX_OUTPUT_PORT_TYPE
+led_g <= led_g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Bbqm_pro|decoder_7seg:wtime2_7seg
+A => led_a.IN0
+A => led_d.IN1
+A => led_f.IN1
+A => led_g.IN1
+B => led_a.IN0
+B => led_c.IN0
+B => led_d.IN0
+B => led_f.IN0
+B => led_a.IN0
+B => led_b.IN1
+B => led_d.IN0
+C => led_a.IN1
+C => led_b.IN0
+C => led_d.IN0
+C => led_d.IN1
+C => led_b.IN0
+C => led_c.IN1
+C => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_c.IN1
+D => led_d.IN1
+D => led_a.IN1
+D => led_b.IN1
+D => led_d.IN1
+D => led_f.IN1
+led_a <= led_a.DB_MAX_OUTPUT_PORT_TYPE
+led_b <= led_b.DB_MAX_OUTPUT_PORT_TYPE
+led_c <= led_c.DB_MAX_OUTPUT_PORT_TYPE
+led_d <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_e <= led_d.DB_MAX_OUTPUT_PORT_TYPE
+led_f <= led_f.DB_MAX_OUTPUT_PORT_TYPE
+led_g <= led_g.DB_MAX_OUTPUT_PORT_TYPE
+
+

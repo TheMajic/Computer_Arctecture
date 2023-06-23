@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Apr 23 10:50:50 2022
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Revision Name : Bbqm_pro
+Top-level Entity Name : Bbqm_pro
+Family : MAX 10
+Total logic elements : 89
+    Total combinational functions : 89
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

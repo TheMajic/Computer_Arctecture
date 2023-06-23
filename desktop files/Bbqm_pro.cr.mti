@@ -1,0 +1,13 @@
+C:/Users/makany/Desktop/Bbqm_pro.v {1 {vlog -work work {C:\Users\makany\Desktop\Bbqm_pro.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module clock_divider
+-- Compiling module BBQM_counter
+-- Compiling module decoder_7seg
+-- Compiling module Wtime_bbqm
+-- Compiling module D_flip_flop
+-- Compiling module Bbqm_pro
+
+Top level modules:
+	Bbqm_pro
+
+} {} {}}

@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "empty",
+					"strict" : false
+				},
+				{
+					"name" : "full",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_pcount[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_wtime2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "tcount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tcount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input1",
+					"strict" : false
+				},
+				{
+					"name" : "input2",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

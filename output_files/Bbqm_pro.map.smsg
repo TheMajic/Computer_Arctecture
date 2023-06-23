@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at Bbqm_pro.v(11): always construct contains both blocking and non-blocking assignments File: E:/Bbqm_pro/Bbqm_pro.v Line: 11
+Warning (10268): Verilog HDL information at Bbqm_pro.v(76): always construct contains both blocking and non-blocking assignments File: E:/Bbqm_pro/Bbqm_pro.v Line: 76
